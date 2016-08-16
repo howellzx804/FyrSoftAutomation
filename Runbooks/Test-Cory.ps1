@@ -14,5 +14,8 @@ workflow Test-Cory
 		$WebhookHeaders
 		$WebhookBody = $WebhookBody | ConvertFrom-Json
 		$WebhookBody | gm
+		$WebhookBody
+		$WebhookBody | ConvertFrom-Json
+		
 		
 }
