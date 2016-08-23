@@ -13,9 +13,7 @@ workflow Test-Cory
 		$WebhookName
 		$WebhookHeaders
 		$WebhookBody = $WebhookBody | ConvertFrom-Json
-		$WebhookBody | gm
 		$WebhookBody
-		$WebhookBody | ConvertFrom-Json
 		
-		
+		Start-Service -Name Spooler
 }
