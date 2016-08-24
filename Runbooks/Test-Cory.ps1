@@ -2,7 +2,7 @@ workflow Test-Cory
 {
     
     param ( 
-        [object]$WebhookData
+        [string]$WebhookData
     ) 
 
         # Collect properties of WebhookData
