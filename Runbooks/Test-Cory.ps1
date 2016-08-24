@@ -10,10 +10,9 @@ workflow Test-Cory
         $WebhookHeaders =   $WebhookData.RequestHeader
         $WebhookBody    =   $WebhookData.RequestBody
 
-		$WebhookName
-		$WebhookHeaders
-		$WebhookBody = $WebhookBody | ConvertFrom-Json
-		$WebhookBody
+		#$WebhookName
+		#$WebhookHeaders
 		
-		Start-Service -Name Spooler
+		Write-Output | ConvertFrom-Json -InputObject $WebhookBody
+		
 }
